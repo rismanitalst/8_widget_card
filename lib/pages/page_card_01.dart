@@ -102,6 +102,7 @@ class MyCard01 extends StatelessWidget {
 
                       const SizedBox(height: 12),
                       Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                         decoration: BoxDecoration(
                           color: Colors.cyan,
                           borderRadius: BorderRadius.circular(20),
