@@ -115,6 +115,49 @@ class MyCard01 extends StatelessWidget {
                             fontWeight: FontWeight.w500,
                             ),
                           ),
+                        ),
+                        
+                        const SizedBox(height: 30),
+                        Row(
+                          children: [
+                            Text(
+                              "Column 1",
+                              style: TextStyle(fontSize: 11.0,
+                              fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              height: 40,
+                              child: VerticalDivider(
+                                thickness: 1,
+                                color: Colors.black,
+                                width: 1),
+                            ),
+                            Text(
+                              "Column 2",
+                              style: TextStyle(fontSize: 11.0,
+                              fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              height: 40,
+                              child: VerticalDivider(
+                                thickness: 1,
+                                color: Colors.black,
+                                width: 1),
+                            ),
+                            Text(
+                              "Column 3",
+                              style: TextStyle(fontSize: 11.0,
+                              fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              height: 40,
+                              child: VerticalDivider(
+                                thickness: 1,
+                                color: Colors.black,
+                                width: 1),
+                            )
+                        
+                          ],
                         )
                       ],
                     ),
