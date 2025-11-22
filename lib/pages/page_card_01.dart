@@ -240,6 +240,30 @@ class MyCard01 extends StatelessWidget {
                 ),
               ),
 
+              //ini card 5
+              Card(
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                color: Color(0xFF154A84),
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Icon(Icons.credit_card, color: Colors.white, size: 32),
+                        Icon(Icons.contactless, color: Colors.white, size: 32),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+
 
               
             ]
