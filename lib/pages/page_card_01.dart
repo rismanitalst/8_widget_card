@@ -89,6 +89,32 @@ class MyCard01 extends StatelessWidget {
                             backgroundImage: AssetImage('assets/images/loopy_lembur.jpg'),
                           ),
                         ),
+
+                      const SizedBox(height: 12),
+                      const Text(
+                        "rismanitalst",
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+
+                      const SizedBox(height: 12),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.cyan,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: const Text(
+                          "Flutter Developer",
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        )
                       ],
                     ),
                   ),
