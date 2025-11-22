@@ -50,6 +50,35 @@ class MyCard01 extends StatelessWidget {
                   ],
                 ),
               ),
+              //ini card 3
+              Card(
+                elevation: 8,
+                shadowColor: Colors.purple,
+                clipBehavior: Clip.antiAlias, // biar gradient ikut rounded
+                child: Container(
+                  decoration: const BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [
+                        Color(0xFFD7C4FF), 
+                        Color(0xFFF3B6D4), 
+                        Color(0xFFFFC4B2)
+                      ],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                  ),
+                  child: const Padding(
+                    padding: EdgeInsets.all(20.0),
+                    child: Text(
+                      "text",
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ]
           )
         )
