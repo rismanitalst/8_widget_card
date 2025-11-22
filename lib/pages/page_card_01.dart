@@ -23,6 +23,8 @@ class MyCard01 extends StatelessWidget {
                 subtitle: Text("Mencoba membuat widget card"),
                 ),
               ),
+
+
               //ini card 2
               Card(
               elevation: 8,
@@ -50,6 +52,8 @@ class MyCard01 extends StatelessWidget {
                   ],
                 ),
               ),
+
+
               //ini card 3
               Card(
                 elevation: 8,
@@ -71,6 +75,7 @@ class MyCard01 extends StatelessWidget {
                     padding: const EdgeInsets.all(20.0),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
+                      
                       children: [
                         Container(
                           decoration: BoxDecoration(
@@ -89,7 +94,7 @@ class MyCard01 extends StatelessWidget {
                             backgroundImage: AssetImage('assets/images/loopy_lembur.jpg'),
                           ),
                         ),
-
+                      
                       const SizedBox(height: 12),
                       const Text(
                         "rismanitalst",
@@ -117,53 +122,102 @@ class MyCard01 extends StatelessWidget {
                           ),
                         ),
                         
-                        const SizedBox(height: 30),
-                        Row(
-                          children: [
-                            Text(
-                              "Column 1",
-                              style: TextStyle(fontSize: 11.0,
-                              fontWeight: FontWeight.bold),
-                            ),
-                            SizedBox(
-                              height: 40,
-                              child: VerticalDivider(
-                                thickness: 1,
-                                color: Colors.black,
-                                width: 1),
-                            ),
-                            Text(
-                              "Column 2",
-                              style: TextStyle(fontSize: 11.0,
-                              fontWeight: FontWeight.bold),
-                            ),
-                            SizedBox(
-                              height: 40,
-                              child: VerticalDivider(
-                                thickness: 1,
-                                color: Colors.black,
-                                width: 1),
-                            ),
-                            Text(
-                              "Column 3",
-                              style: TextStyle(fontSize: 11.0,
-                              fontWeight: FontWeight.bold),
-                            ),
-                            SizedBox(
-                              height: 40,
-                              child: VerticalDivider(
-                                thickness: 1,
-                                color: Colors.black,
-                                width: 1),
-                            )
-                        
-                          ],
-                        )
+
+                          //buat 3 kolom
+                          const SizedBox(height: 30),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              //ini kolom 1
+                              Column(
+                              children: [
+                                Text(
+                                "681",
+                                style: 
+                                TextStyle(
+                                  fontSize: 20.0,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                                ),
+                              SizedBox(
+                                height: 5),
+                                Text("Followers",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white.withValues(alpha: 0.6),
+                                  fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ]
+                              ),    
+                              SizedBox(height: 20,
+                                child: VerticalDivider(
+                                  thickness: 1,
+                                  color: Colors.white,
+                                  width: 2),
+                                ),
+
+                              //ini kolom 2
+                              Column(
+                              children: [
+                                Text(
+                                "3 Years",
+                                style: 
+                                TextStyle(
+                                  fontSize: 20.0,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                                ),
+                              SizedBox(
+                                height: 5),
+                                Text("Experience",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white.withValues(alpha: 0.6),
+                                  fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ]
+                              ),    
+                              SizedBox(height: 20,
+                                child: VerticalDivider(
+                                  thickness: 1,
+                                  color: Colors.white,
+                                  width: 2),
+                                ),
+
+                              //ini kolom 3
+                              Column(
+                              children: [
+                                Text(
+                                "225",
+                                style: 
+                                TextStyle(
+                                  fontSize: 20.0,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                                ),
+                              SizedBox(
+                                height: 5),
+                                Text("Project",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white.withValues(alpha: 0.6),
+                                  fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ]
+                              ),    
+                            ]
+                          )
                       ],
-                    ),
+                    )
                   ),
                 ),
               ),
+
+
+              
             ]
           )
         )
