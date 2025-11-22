@@ -16,11 +16,30 @@ class MyCard01 extends StatelessWidget {
               //ini card 1
               Card(
               color: Colors.yellow,
-               elevation: 8,
+              elevation: 8,
                 child: ListTile(
                 leading: Icon(Icons.account_circle, size: 50),
                 title: Text("Contoh Card"),
                 subtitle: Text("Mencoba membuat widget card"),
+                ),
+              ),
+              //ini card 2
+              Card(
+              elevation: 8,
+                child: Column(
+                  children: [
+                    Text(
+                     "Profil Jake - ENHYPEN",
+                      style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,),
+                    ),
+                    Text(
+                      "Jake (Sim Jaeyun) adalah member ENHYPEN yang dikenal dengan kepribadian bright, witty, dan charming, dengan kemampuan bahasa Inggris yang sangat baik karena tumbuh besar di Australia. Sebagai performer, Jake punya karakter panggung yang kuat, suara stabil, dan energi penuh yang selalu bikin penampilan terasa hidup. Di balik itu, ia dikenal hangat, penyayang, sering perhatian ke member lain, dan punya image “golden retriever boyfriend” yang lovable banget.",
+                      textAlign: TextAlign.justify,
+                      style: TextStyle(fontSize: 16, color: Colors.grey[600]),
+                    )
+                  ]
                 ),
               ),
             ]
