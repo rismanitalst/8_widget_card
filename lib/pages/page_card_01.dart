@@ -216,6 +216,30 @@ class MyCard01 extends StatelessWidget {
                 ),
               ),
 
+              //ini card 4
+              const SizedBox(height: 40),
+
+              // MUSIC 
+              Card(
+                elevation: 5.0,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const [
+                    ListTile(
+                      leading: Icon(Icons.music_note_outlined, size: 50),
+                      title: Text('R.I.P. 2 My Youth'),
+                      subtitle: Text('merupakan lagu The Neighbourhood dari album Wiped Out!'),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(16.0),
+                      child: Text(
+                        'Lagu menggambarkan kesadaran pahit bahwa masa muda telah berlalu dan tak bisa kembali. Lagu ini memakai metafora “pemakaman” untuk menunjukkan berakhirnya fase hidup yang penuh kebebasan, kecerobohan, dan rasa percaya diri tanpa beban. Melalui lirik yang reflektif dan emosional, lagu ini mengekspresikan rasa kehilangan, penyesalan, dan pergulatan batin saat harus menerima realita baru yang lebih keras dan penuh tuntutan. Meski demikian, ada nuansa penerimaan bahwa kedewasaan adalah proses yang tak terhindarkan, dan perjalanan hidup tetap harus terus berjalan meskipun masa muda telah “mati.”',
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
 
               
             ]
