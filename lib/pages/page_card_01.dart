@@ -12,7 +12,18 @@ class MyCard01 extends StatelessWidget {
           padding: const EdgeInsets.all(20.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: []
+            children: [
+              //ini card 1
+              Card(
+              color: Colors.yellow,
+               elevation: 8,
+                child: ListTile(
+                leading: Icon(Icons.account_circle, size: 50),
+                title: Text("Contoh Card"),
+                subtitle: Text("Mencoba membuat widget card"),
+                ),
+              ),
+            ]
           )
         )
       ),
