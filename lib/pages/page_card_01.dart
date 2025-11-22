@@ -67,14 +67,29 @@ class MyCard01 extends StatelessWidget {
                       end: Alignment.bottomRight,
                     ),
                   ),
-                  child: const Padding(
-                    padding: EdgeInsets.all(20.0),
-                    child: Text(
-                      "text",
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.white,
-                      ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white, width: 4),
+                            shape: BoxShape.circle,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black26,
+                                blurRadius: 8,
+                                offset: Offset(0, 4),
+                              ),
+                            ],
+                          ),
+                          child: const CircleAvatar(
+                            radius: 60,
+                            backgroundImage: AssetImage('assets/images/loopy_lembur.jpg'),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
