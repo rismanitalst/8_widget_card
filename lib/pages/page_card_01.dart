@@ -258,17 +258,90 @@ class MyCard01 extends StatelessWidget {
                         Icon(Icons.contactless, color: Colors.white, size: 32),
                         ],
                       ),
+                      const SizedBox(height: 30),
+                      const Text(
+                        "4562  1122  4595  7852",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 22,
+                          letterSpacing: 2,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+
+                      const SizedBox(height: 30),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              Text(
+                                "Rismanita Lestari",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              SizedBox(height: 10),
+                              Row(
+                                children: [
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Expiry date",
+                                        style: TextStyle(
+                                          color: Colors.white70,
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                      Text(
+                                        "24/2000",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(width: 40),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "CVV",
+                                        style: TextStyle(
+                                          color: Colors.white70,
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                      Text(
+                                        "6986",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w500,
+                                          ),
+                                      ),
+                                    ],
+                                  ),
+
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
               ),
-
-
-
-              
-            ]
-          )
-        )
+            ],
+          ),
+        ),
       ),
     );
   }
